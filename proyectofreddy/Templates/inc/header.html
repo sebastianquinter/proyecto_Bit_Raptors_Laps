@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/css/font-awesome.min.Css' %}">
+  <link rel="stylesheet" href="{% static 'Css/css/navbar.css' %}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{% static 'img/logo_n.png' %}">
+  <title>Bit Raptors Labs</title>
+</head>
+
+<body>
+  <nav  class="navbar navbar-expand-lg bg-dark bg-opacity-50 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white	" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'img/logo_n.png' %}" alt="Logo" width="90" height="50">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white	" aria-current="page" href="/Home/home">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-2">
+              <li><a class="dropdown-item d-flex align-items-center" href="/Mantenimiento_soporte/mantenimiento_soporte">Mantenimiento y soporte técnico</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Reparacion_ardware/reparacion_ardware">Redes e infraestructura</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Seguridad_redes/seguridad_redes">Seguridad y Redes</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Administracion_servidores/administracion_servidores">Administración de Servidores (Físicos & Nube)</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Nube_virtualizacion/nube_virtualizacion">Nube y Virtualización</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Desarrollo_it/desarrollo_it">Desarrollo y consultoría TI</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Telefonia_pbx/telefonia_pbx">Telefonía IP & PBX</span></a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="/Servicios_adicionales/servicios_adicionales">Servicios Profesionales Adicionales</span></a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link text-white	" href="/Contactanos/contactanos">Contactanos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white	" href="/Nosotros/nosotros">Nosotros</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-white	">
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+{% include "inc/header.html" %}
+{%load static%}
+  <!-- Redes e infraestructura  -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" src="{% static 'img/logo_n.png' %}">
+  <title>ADMINISTRACIÓN DE SERVIDORES</title>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->  <link rel="stylesheet" href="{% static 'Css/css/textoredirecciones.css' %}">
+</head>
+<body>
+
+  <!-- ENCABEZADO DEL SERVICIO -->
+<section class="container-fluid p-0">
+    <div class="position-relative">
+      <img src="{% static 'img/encabezado4.png' %}" class="img-fluid w-100" style="max-height: 450px; object-fit: cover;" alt="Encabezado del servicio">
+      
+      <div class="position-absolute top-50 start-50 translate-middle text-white text-center px-3">
+        <P class="typing-title fs-1 fst-italic">ADMINISTRACIÓN DE SERVIDORES (Físicos & Nube)</P>       
+        <div>
+        <button type="button" onclick="window.open('https://wa.me/573125260493?text=Hola,%20quisiera%20más%20información%20sobre%20ADMINISTRACIÓN%20DE%20SERVIDORES')" title="Chatea con nosotros" class="btn btn-success">Contactanos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- COLUMNA IZQUIERDA: Descripción general -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">Descripción general</h2>
+        <p class="text-muted">
+            Ofrecemos administración completa de servidores físicos y en la nube, aplicando hardening y parches de seguridad, monitoreo constante, copias de respaldo y restauración. Gestionamos servicios críticos como Active Directory, DNS, bases de datos y correo, además de brindar respuesta rápida a incidentes para garantizar estabilidad, disponibilidad y protección de tus sistemas.
+        <h2 class="fw-bold mb-3">¿Por qué es importante?</h2>
+        <ul class="list-unstyled">
+          <li>✅ Fortalece la seguridad mediante hardening y aplicación de parches.</li>
+          <li>✅ Garantiza disponibilidad con monitoreo y respuesta a incidentes.</li>
+          <li>✅ Protege la información gracias a backups y restauraciones confiables.</li>
+          <li>✅ Optimiza el rendimiento de servicios críticos para el negocio.</li>
+        </ul>
+      </div>
+  
+      <!-- COLUMNA DERECHA: Tarjeta con precios -->
+      <div class="col-lg-6">
+        <div class="card shadow border-0">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Planes desde</h5>
+            <p class="fs-3 text-primary mb-4">$290.000 COP</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item">✔️ 1 hora de asesoría personalizada</li>
+              <li class="list-group-item">✔️ Informe técnico con recomendaciones</li>
+            </ul>
+            <a onclick="window.open('https://wa.me/573125260493?text=Hola,%20quisiera%20más%20información%20sobre%20ADMINISTRACIÓN%20DE%20SERVIDORES')" title="chatea con nosotros" class="btn btn-success w-100">Solicitar este servicio</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- SERVICIOS A OFRECER -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center fw-bold mb-5">Planes</h3>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Paquete 1 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <div class="card-body d-flex flex-column text-center">
+            <i class="fa fa-server fa-3x mb-3"></i>
+            <h5 class="fw-bold">Servidor Básico Administrado (Linux / Windows)</h5>
+            <p class="text-muted">Implementamos y gestionamos un servidor único, en Linux o Windows, asegurando su correcta configuración, seguridad inicial, actualizaciones y soporte básico para garantizar su funcionamiento estable.</p>
+            <button onclick="window.open('https://wa.me/573125260493?text=Hola,%20quisiera%20más%20información%20sobre%20ADMINISTRACIÓN%20DE%20SERVIDORES')" class="btn btn-success mt-auto">Información sobre este servicio</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paquete 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100">
+          <div class="card-body d-flex flex-column text-center">
+            <i class="fa fa-cloud-upload-alt fa-3x mb-3"></i>
+            <h5 class="fw-bold">Servidor Crítico con Backup y Monitoreo</h5>
+            <p class="text-muted">Administramos servidores críticos con políticas avanzadas de seguridad, monitoreo 24/7 y copias de respaldo externas, garantizando continuidad operativa y protección de datos ante cualquier incidente.</p>
+            <button onclick="window.open('https://wa.me/573125260493?text=Hola,%20quisiera%20más%20información%20sobre%20ADMINISTRACIÓN%20DE%20SERVIDORES')" class="btn btn-success mt-auto">Información sobre este servicio</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paquete 3 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100">
+          <div class="card-body d-flex flex-column text-center">
+            <i class="fa fa-database fa-3x mb-3"></i>
+            <h5 class="fw-bold">Clúster, Alta Disponibilidad y Virtualización</h5>
+            <p class="text-muted">"Implementamos y administramos entornos de clúster con múltiples nodos, configuraciones de alta disponibilidad (HA) y soluciones de virtualización que aseguran failover automático y planes de recuperación ante desastres (DR), garantizando continuidad y resiliencia en los servicios.</p>
+            <button onclick="window.open('https://wa.me/573125260493?text=Hola,%20quisiera%20más%20información%20sobre%20ADMINISTRACIÓN%20DE%20SERVIDORES')" class="btn btn-success mt-auto">Información sobre este servicio</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+{% include "inc/footer.html" %}
