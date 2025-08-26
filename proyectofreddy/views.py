@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from proyectofreddy.models import Paises
 from django.db import connection
 from django.core.files.storage import FileSystemStorage
 
