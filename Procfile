@@ -1,1 +1,0 @@
-web: gunicorn proyectofreddy.wsgi:application --log-file -
