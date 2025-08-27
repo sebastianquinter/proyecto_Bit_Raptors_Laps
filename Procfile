@@ -1,1 +1,1 @@
-web: gunicorn proyectofreddy.wsgi:application --log-file
+web: gunicorn proyectofreddy.wsgi:application --log-file -
