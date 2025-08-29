@@ -20,6 +20,7 @@ from proyectofreddy.views import home, mantenimiento_soporte, reparacion_ardware
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home, name='home'),
     path('Home/home',home),
     path('Mantenimiento_soporte/mantenimiento_soporte',mantenimiento_soporte),
     path('Reparacion_ardware/reparacion_ardware',reparacion_ardware),
@@ -31,7 +32,4 @@ urlpatterns = [
     path('Servicios_adicionales/servicios_adicionales',servicios_adicionales),
     path('Contactanos/contactanos',contactanos),
     path('Nosotros/nosotros',nosotros),
-
-
-
 ]
