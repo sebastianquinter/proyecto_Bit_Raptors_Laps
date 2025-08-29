@@ -13,13 +13,18 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "dev-unsafe")
 DEBUG = os.environ.get("DEBUG", "False") == "True"
 
 # ALLOWED HOSTS
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "bitraptorlabs.com",        # tu dominio propio
+    "www.bitraptorlabs.com",    # si usas el www
+    "proyecto-bit-raptors-laps.onrender.com",  # el dominio de Render
+    "localhost", "127.0.0.1"    # opcional para pruebas locales
+]
 
 # CSRF (agrega aquí tu dominio propio y el de Render)
 CSRF_TRUSTED_ORIGINS = [
     "https://bitraptorlabs.com",
     "https://www.bitraptorlabs.com",
-    "https://<tu-app>.onrender.com",  # reemplaza con tu dominio en Render
+    "proyecto-bit-raptors-laps.onrender.com",  # dominio en Render
 ]
 
 # INSTALLED APPS
