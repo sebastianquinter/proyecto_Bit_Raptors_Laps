@@ -112,17 +112,6 @@ MEDIA_ROOT = BASE_DIR / "proyectofreddy" / "Public" / "img"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Ignorar archivos .map al recolectar estáticos
-import re
-from django.contrib.staticfiles.storage import ManifestStaticFilesStorage
-
-class IgnoreMapManifestStaticFilesStorage(ManifestStaticFilesStorage):
-    def url(self, name, force=False):
-        try:
-            return super().url(name, force=force)
-        except ValueError as e:
-            if name.endswith('.map'):
-                return name  # Devuelve la ruta sin romper
-            raise e
-
-STATICFILES_STORAGE = "proyectofreddy.settings.IgnoreMapManifestStaticFilesStorage"
+# WhiteNoise (para servir archivos estáticos en Render)
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
