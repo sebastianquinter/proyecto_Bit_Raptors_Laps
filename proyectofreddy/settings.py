@@ -29,7 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Para servir archivos estáticos en Render
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # WhiteNoise para archivos estáticos
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -58,7 +58,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'proyectofreddy.wsgi.application'
 
-
 # Database (usando DATABASE_URL de Render)
 DATABASES = {
     "default": dj_database_url.config(
@@ -81,15 +80,32 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
 
+# ================================
 # Static files
+# ================================
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [BASE_DIR / "proyectofreddy" / "Public"]
+
+# Archivos estáticos en desarrollo (css, js, imágenes)
+STATICFILES_DIRS = [
+    BASE_DIR / "proyectofreddy" / "Public",
+]
+
+# Carpeta donde collectstatic los guardará para producción
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-# WhiteNoise (para servir archivos estáticos en Render)
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# WhiteNoise Storage (comprime y versiona los estáticos)
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
-# Media
+# ================================
+# Media (subidas de usuarios)
+# ================================
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "proyectofreddy" / "Public" / "img"
 
