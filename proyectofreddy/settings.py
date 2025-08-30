@@ -111,7 +111,4 @@ MEDIA_ROOT = BASE_DIR / "proyectofreddy" / "Public" / "img"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# Ignorar archivos .map al recolectar estáticos
-# WhiteNoise (para servir archivos estáticos en Render)
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
