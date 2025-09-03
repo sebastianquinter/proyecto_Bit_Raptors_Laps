@@ -80,14 +80,10 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_TZ = True
 
-# ================================
-# Static files
-# ================================
-STATIC_URL = "/static/"
+STATIC_URL = 'static/'
 
-# Archivos estáticos en desarrollo (css, js, imágenes)
 STATICFILES_DIRS = [
-    BASE_DIR / "proyectofreddy" / "Public",
+    'proyectofreddy/Public',
 ]
 
 # Carpeta donde collectstatic los guardará para producción
