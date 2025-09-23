@@ -6,15 +6,6 @@ window.addEventListener('scroll', () => {
     bg.style.transform = `translateY(${yPos}px)`;
   });
 
-  // Parpadeo cada pocos segundos
-setInterval(() => {
-    const robot = document.querySelector('.robot');
-    robot.style.filter = 'brightness(0.7)';
-    setTimeout(() => {
-      robot.style.filter = 'brightness(1)';
-    }, 100); // Duración del parpadeo
-  }, 4000); // Cada 4 segundos
-
   const canvas = document.getElementById('letterGlitchCanvas');
   const ctx = canvas.getContext('2d');
   const fontSize = 15;
