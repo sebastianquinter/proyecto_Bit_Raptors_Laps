@@ -88,7 +88,7 @@ STATICFILES_DIRS = [
 
 
 # Carpeta donde collectstatic los guardará para producción
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # WhiteNoise Storage (comprime y versiona los estáticos)
 STORAGES = {
@@ -107,5 +107,11 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "proyectofreddy" / "Public" / "img"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    ...
+]
 
 
