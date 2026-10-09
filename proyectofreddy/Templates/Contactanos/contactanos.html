@@ -23,32 +23,44 @@
 
 <section class="contact-section">
   <div class="container mt-5">
-    <h2 class="text-center mb-4">Contáctanos</h2>
-    <p class="text-center mb-5">Estamos listos para asesorarte. Déjanos tus datos y nos pondremos en contacto contigo.</p>
-    
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <form id="contactForm">
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="asunto" name="asunto">
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-success">Enviar por WhatsApp</button>
-          </div>
-        </form>
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-lg-5">
+        <div class="p-4 rounded-4 shadow-sm border" style="background: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.08);">
+          <span class="d-inline-block mb-2 text-uppercase" style="letter-spacing:0.12em; color:#9fe6ff; font-size:0.72rem; font-weight:700;">Contacto</span>
+          <h2 class="mb-3 text-white">Hablemos de tu próximo proyecto.</h2>
+          <p class="text-light mb-4">Te acompañamos con soluciones tecnológicas claras, seguras y pensadas para crecer sin complicaciones.</p>
+          <ul class="list-unstyled mb-0 text-light">
+            <li class="mb-2"><strong>📞</strong> +57 300 636 8046</li>
+            <li class="mb-2"><strong>✉️</strong> info@bitraptoplabs.com</li>
+            <li><strong>📍</strong> Medellín, Colombia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5" style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.08);">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label text-light">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label text-light">Asunto</label>
+              <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ej: Soporte técnico, redes, seguridad...">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label text-light">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos brevemente qué necesitas" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success btn-lg">Enviar por WhatsApp</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

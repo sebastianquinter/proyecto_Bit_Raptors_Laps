@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    padding-top: 74px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #070b12;
     color: #f3f7ff;
@@ -31,9 +32,9 @@ h1 {
 }
 
 .site-header {
-    background: rgba(10, 14, 20, 0.9);
+    background: rgba(10, 14, 20, 0.7);
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(6px);
 }
 
 .site-header .nav-link {
@@ -154,7 +155,22 @@ section {
 }
 
 @media (max-width: 991px) {
+    body {
+        padding-top: 68px;
+    }
+
     .site-header {
-        background: rgba(10, 14, 20, 0.98);
+        background: rgba(10, 14, 20, 0.8);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 64px;
+    }
+
+    .site-header .navbar-brand img {
+        width: 72px;
+        height: auto;
     }
 }
