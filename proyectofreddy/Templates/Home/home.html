@@ -14,36 +14,91 @@
 </head>
 
 <body>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide hero-carousel" data-bs-ride="carousel">
     <!-- Indicadores -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Video 1"></button>
+        aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Video 2"></button>
+        aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Video 3"></button>
+        aria-label="Slide 3"></button>
     </div>
 
     <!-- Contenido del carrusel -->
     <div class="carousel-inner">
 
       <!-- Imagen 1 -->
-      <div class="carousel-item active" style="position: relative;">
-        <img src="{% static 'img/fondo1.png' %}" class="d-block w-100" alt="Encabezado principal 1" style="height: 550px; object-fit: cover;">
-        <div class="overlay"></div>
+      <div class="carousel-item active hero-slide" style="position: relative;">
+        <img src="{% static 'img/fondo1.png' %}" class="d-block w-100" alt="Encabezado principal 1">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row align-items-center w-100">
+            <div class="col-lg-7 col-md-8">
+              <span class="hero-badge">Tecnología • Seguridad • Soporte</span>
+              <h1>Impulsamos negocios con infraestructura digital sólida.</h1>
+              <p>Diseñamos soluciones de redes, seguridad, servidores, nube y desarrollo para que tu empresa avance con confianza.</p>
+              <div class="hero-actions">
+                <a href="/Contactanos/contactanos" class="btn btn-primary btn-hero btn-hero-primary">Solicitar asesoría</a>
+                <a href="/Servicios_adicionales/servicios_adicionales" class="btn btn-outline-light btn-hero">Ver servicios</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-4 d-none d-md-block">
+              <div class="hero-panel">
+                <div class="mini-stat">
+                  <strong>24/7</strong>
+                  <span>Soporte</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>+8</strong>
+                  <span>Servicios</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>100%</strong>
+                  <span>Enfoque en resultados</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Imagen 2 -->
-      <div class="carousel-item" style="position: relative;">
-        <img src="{% static 'img/fondo2.png' %}" class="d-block w-100" alt="Encabezado principal 2" style="height: 550px; object-fit: cover;">
-        <div class="overlay"></div>
+      <div class="carousel-item hero-slide" style="position: relative;">
+        <img src="{% static 'img/fondo2.png' %}" class="d-block w-100" alt="Encabezado principal 2">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row align-items-center w-100">
+            <div class="col-lg-7 col-md-8">
+              <span class="hero-badge">Infraestructura inteligente</span>
+              <h1>Protegemos tu negocio con tecnología confiable.</h1>
+              <p>Fortalecemos tu seguridad, red y servidores para que tus operaciones sean rápidas, estables y libres de riesgos.</p>
+              <div class="hero-actions">
+                <a href="/Seguridad_redes/seguridad_redes" class="btn btn-primary btn-hero btn-hero-primary">Ver seguridad</a>
+                <a href="/Nube_virtualizacion/nube_virtualizacion" class="btn btn-outline-light btn-hero">Ver nube</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Imagen 3 -->
-      <div class="carousel-item" style="position: relative;">
-        <img src="{% static 'img/fondo3.png' %}" class="d-block w-100" alt="Encabezado principal 3" style="height: 550px; object-fit: cover;">
-        <div class="overlay"></div>
+      <div class="carousel-item hero-slide" style="position: relative;">
+        <img src="{% static 'img/fondo3.png' %}" class="d-block w-100" alt="Encabezado principal 3">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row align-items-center w-100">
+            <div class="col-lg-7 col-md-8">
+              <span class="hero-badge">Soluciones a medida</span>
+              <h1>Digitalizamos procesos para crecer con eficiencia.</h1>
+              <p>Desde soporte técnico hasta desarrollo a la medida, ayudamos a empresas y equipos a operar mejor cada día.</p>
+              <div class="hero-actions">
+                <a href="/Desarrollo_it/desarrollo_it" class="btn btn-primary btn-hero btn-hero-primary">Conocer soluciones</a>
+                <a href="/Nosotros/nosotros" class="btn btn-outline-light btn-hero">Nuestra historia</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
